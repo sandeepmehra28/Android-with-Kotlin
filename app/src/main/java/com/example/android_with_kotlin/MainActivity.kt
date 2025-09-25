@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android_with_kotlin.R.id.btnDark
 import com.example.android_with_kotlin.intents.ImplicitIntentActivity
+import com.example.android_with_kotlin.views.WebViewActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         val layout = findViewById<LinearLayout>(R.id.LinearLayout)
         val btnClick = findViewById<Button>(R.id.btnClickme)
         val btnImIntent = findViewById<Button>(R.id.btnImplicitIntent)
+        val btnWebView = findViewById<Button>(R.id.btnWebView)
         btnRead.setOnClickListener {
             layout.setBackgroundResource(R.color.yellow)
         }
@@ -36,5 +38,9 @@ class MainActivity : AppCompatActivity() {
            val intent =  Intent(this, ImplicitIntentActivity::class.java)
            startActivity(intent)
        }
+        btnWebView.setOnClickListener {
+            val  intent = Intent(this, WebViewActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

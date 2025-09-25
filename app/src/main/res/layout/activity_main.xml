@@ -37,4 +37,11 @@
         android:text="click me"
         android:layout_margin="20dp"
         />
+    <Button
+        android:id="@+id/btnWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web-View"
+        android:layout_margin="20dp"
+        />
 </LinearLayout>
