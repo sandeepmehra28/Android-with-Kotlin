@@ -2,6 +2,7 @@ package com.example.android_with_kotlin
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
@@ -11,6 +12,7 @@ import com.example.android_with_kotlin.R.id.btnDark
 import com.example.android_with_kotlin.intents.ImplicitIntentActivity
 import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
 import com.example.android_with_kotlin.views.WebViewActivity
+import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val btnImIntent = findViewById<Button>(R.id.btnImplicitIntent)
         val btnWebView = findViewById<Button>(R.id.btnWebView)
         val mulIntents = findViewById<Button>(R.id.btnMulIntent)
+        Log.i("INFO TAG","THIS IS MY INFO TAG")
         btnRead.setOnClickListener {
             layout.setBackgroundResource(R.color.yellow)
         }

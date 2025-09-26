@@ -23,8 +23,8 @@ class CafeMainActivity : AppCompatActivity() {
         val or4 = findViewById<EditText>(R.id.order4)
         val orderBtn = findViewById<Button>(R.id.OrderBtn)
         orderBtn.setOnClickListener {
-         val orderList = or1.text.toString() + " " + or2.text.toString() + " " + or3.text.toString() + " " + or4.text.toString()
-          val intent = Intent(this,Orders::class.java)
+            val orderList = or1.text.toString() + " " + or2.text.toString() + " " + or3.text.toString() + " " + or4.text.toString()
+            val intent = Intent(this,Orders::class.java)
             intent.putExtra(KEY,orderList)
             startActivity(intent)
         }
