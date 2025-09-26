@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android_with_kotlin.R.id.btnDark
 import com.example.android_with_kotlin.intents.ImplicitIntentActivity
+import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
 import com.example.android_with_kotlin.views.WebViewActivity
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         val btnClick = findViewById<Button>(R.id.btnClickme)
         val btnImIntent = findViewById<Button>(R.id.btnImplicitIntent)
         val btnWebView = findViewById<Button>(R.id.btnWebView)
+        val mulIntents = findViewById<Button>(R.id.btnMulIntent)
         btnRead.setOnClickListener {
             layout.setBackgroundResource(R.color.yellow)
         }
@@ -40,6 +42,10 @@ class MainActivity : AppCompatActivity() {
        }
         btnWebView.setOnClickListener {
             val  intent = Intent(this, WebViewActivity::class.java)
+            startActivity(intent)
+        }
+        mulIntents.setOnClickListener {
+            val intent = Intent(this, CafeMainActivity::class.java)
             startActivity(intent)
         }
     }
