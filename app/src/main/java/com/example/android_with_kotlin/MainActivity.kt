@@ -11,9 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.android_with_kotlin.R.id.btnDark
 import com.example.android_with_kotlin.intents.ImplicitIntentActivity
 import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
+import com.example.android_with_kotlin.uiux.ShowLogoActivity
 import com.example.android_with_kotlin.views.WebViewActivity
-import kotlin.math.log
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val btnImIntent = findViewById<Button>(R.id.btnImplicitIntent)
         val btnWebView = findViewById<Button>(R.id.btnWebView)
         val mulIntents = findViewById<Button>(R.id.btnMulIntent)
+        val uiux = findViewById<Button>(R.id.btnUiUx)
         Log.i("INFO TAG","THIS IS MY INFO TAG")
         btnRead.setOnClickListener {
             layout.setBackgroundResource(R.color.yellow)
@@ -49,6 +49,10 @@ class MainActivity : AppCompatActivity() {
         }
         mulIntents.setOnClickListener {
             val intent = Intent(this, CafeMainActivity::class.java)
+            startActivity(intent)
+        }
+        uiux.setOnClickListener {
+            val intent = Intent(this, ShowLogoActivity::class.java)
             startActivity(intent)
         }
     }

@@ -14,7 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlin">
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".uiux.HomeUiUx"
+            android:exported="false" />
+        <activity
+            android:name=".uiux.ShowLogoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiux.UiUxMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uiux.SplashScreenActivity"
             android:exported="false" />
         <activity
             android:name=".multiple_intents_class.Orders"
