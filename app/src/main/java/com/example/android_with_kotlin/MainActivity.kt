@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android_with_kotlin.R.id.btnDark
+import com.example.android_with_kotlin.database_signup.SigninActivity
 import com.example.android_with_kotlin.intents.ImplicitIntentActivity
 import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
 import com.example.android_with_kotlin.uiux.ShowLogoActivity
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         val btnWebView = findViewById<Button>(R.id.btnWebView)
         val mulIntents = findViewById<Button>(R.id.btnMulIntent)
         val uiux = findViewById<Button>(R.id.btnUiUx)
+        val DBBtn = findViewById<Button>(R.id.btnDataBase)
         Log.i("INFO TAG","THIS IS MY INFO TAG")
         btnRead.setOnClickListener {
             layout.setBackgroundResource(R.color.yellow)
@@ -53,6 +55,10 @@ class MainActivity : AppCompatActivity() {
         }
         uiux.setOnClickListener {
             val intent = Intent(this, ShowLogoActivity::class.java)
+            startActivity(intent)
+        }
+        DBBtn.setOnClickListener {
+            val intent = Intent(this, SigninActivity::class.java)
             startActivity(intent)
         }
     }

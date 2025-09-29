@@ -58,4 +58,11 @@
      android:text="UI/UX"
      android:layout_margin="20dp"
      />
+ <Button
+     android:id="@+id/btnDataBase"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="DataBase"
+     android:layout_margin="20dp"
+     />
 </LinearLayout>

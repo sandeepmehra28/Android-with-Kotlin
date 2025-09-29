@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlin">
         <activity
+            android:name=".database_signup.SigninActivity"
+            android:exported="false" />
+        <activity
             android:name=".uiux.HomeUiUx"
             android:exported="false" />
         <activity
