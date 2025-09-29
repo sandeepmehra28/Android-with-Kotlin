@@ -2,7 +2,9 @@
   <dictionary name="project">
     <words>
       <w>graybackground</w>
+      <w>signin</w>
       <w>uiux</w>
+      <w>welcometext</w>
     </words>
   </dictionary>
 </component>

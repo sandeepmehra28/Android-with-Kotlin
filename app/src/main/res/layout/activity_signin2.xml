@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".database_signup.SigninActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:text="Welcome\nSign In to Continue"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="40dp"
+        android:textStyle="bold"
+        android:background="@drawable/top_curve_yellow" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxStrokeColor="@color/yellow"
+        app:hintTextColor="@color/yellow"
+        android:layout_width="300dp"
+        android:layout_marginTop="30sp"
+        app:boxCornerRadiusBottomEnd="15sp"
+        app:boxCornerRadiusBottomStart="15sp"
+        app:boxCornerRadiusTopStart="15sp"
+        app:boxCornerRadiusTopEnd="15sp"
+        app:boxBackgroundColor="#C8C5C5"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:textColorHint="@color/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/userNameEditText"
+            android:hint="Enter Unique ID" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_marginTop="70dp"
+        android:text="Sign in"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/BtnSignin"
+        android:backgroundTint="#FFC107"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        />
+</LinearLayout>

@@ -14,7 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlin">
         <activity
+            android:name=".database_signup.WelcomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".database_signup.SigninActivity"
+            android:exported="false" />
+        <activity
+            android:name=".database_signup.SignupActivity"
             android:exported="false" />
         <activity
             android:name=".uiux.HomeUiUx"

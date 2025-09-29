@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android_with_kotlin.R.id.btnDark
-import com.example.android_with_kotlin.database_signup.SigninActivity
+import com.example.android_with_kotlin.database_signup.SignupActivity
 import com.example.android_with_kotlin.intents.ImplicitIntentActivity
 import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
 import com.example.android_with_kotlin.uiux.ShowLogoActivity
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         DBBtn.setOnClickListener {
-            val intent = Intent(this, SigninActivity::class.java)
+            val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
     }
