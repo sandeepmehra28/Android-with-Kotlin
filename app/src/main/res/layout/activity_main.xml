@@ -10,59 +10,81 @@
 
    <Button
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
+       android:layout_height="40dp"
        android:id="@+id/btnDark"
        android:text="Dark"
-       android:layout_margin="20dp"
+       android:layout_marginStart="20dp"
+       android:layout_marginEnd="20dp"
+       android:layout_marginTop="40dp"
        />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:id="@+id/btnRead"
         android:text="Read"
-        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:id="@+id/btnImplicitIntent"
         android:text="Intent Classes / Implicit Intent"
-        android:layout_margin="20dp"
         />
 
     <Button
         android:id="@+id/btnClickme"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="click me"
-        android:layout_margin="20dp"
-        />
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="click me" />
     <Button
         android:id="@+id/btnWebView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Web-View"
-        android:layout_margin="20dp"
-        />
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Web-View" />
     <Button
         android:id="@+id/btnMulIntent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="multiple intents"
-        android:layout_margin="20dp"
-        />
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="multiple intents" />
  <Button
      android:id="@+id/btnUiUx"
      android:layout_width="match_parent"
-     android:layout_height="wrap_content"
+     android:layout_height="40dp"
+     android:layout_marginTop="20dp"
+     android:layout_marginStart="20dp"
+     android:layout_marginEnd="20dp"
      android:text="UI/UX"
-     android:layout_margin="20dp"
      />
  <Button
      android:id="@+id/btnDataBase"
      android:layout_width="match_parent"
-     android:layout_height="wrap_content"
+     android:layout_height="40dp"
+     android:layout_marginTop="20dp"
+     android:layout_marginStart="20dp"
+     android:layout_marginEnd="20dp"
      android:text="DataBase"
-     android:layout_margin="20dp"
+     />
+ <Button
+     android:id="@+id/btnViewBinding"
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:layout_marginTop="20dp"
+     android:layout_marginStart="20dp"
+     android:layout_marginEnd="20dp"
+     android:text="View Binding"
      />
 </LinearLayout>

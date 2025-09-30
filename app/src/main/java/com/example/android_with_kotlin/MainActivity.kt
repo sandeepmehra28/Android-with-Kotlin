@@ -13,6 +13,7 @@ import com.example.android_with_kotlin.database_signup.SignupActivity
 import com.example.android_with_kotlin.intents.ImplicitIntentActivity
 import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
 import com.example.android_with_kotlin.uiux.ShowLogoActivity
+import com.example.android_with_kotlin.viewbinding.ViewBindingActivity
 import com.example.android_with_kotlin.views.WebViewActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         val mulIntents = findViewById<Button>(R.id.btnMulIntent)
         val uiux = findViewById<Button>(R.id.btnUiUx)
         val DBBtn = findViewById<Button>(R.id.btnDataBase)
+        val btnViewBinding = findViewById<Button>(R.id.btnViewBinding)
         Log.i("INFO TAG","THIS IS MY INFO TAG")
         btnRead.setOnClickListener {
             layout.setBackgroundResource(R.color.yellow)
@@ -61,5 +63,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
+        btnViewBinding.setOnClickListener {
+            val intent = Intent(this, ViewBindingActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
