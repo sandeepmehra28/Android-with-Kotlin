@@ -10,61 +10,59 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android_with_kotlin.R.id.btnDark
 import com.example.android_with_kotlin.database_signup.SignupActivity
+import com.example.android_with_kotlin.databinding.ActivityMainBinding
+import com.example.android_with_kotlin.dialogboxes.AlertDialogBoxActivity
 import com.example.android_with_kotlin.intents.ImplicitIntentActivity
 import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
 import com.example.android_with_kotlin.uiux.ShowLogoActivity
 import com.example.android_with_kotlin.viewbinding.ViewBindingActivity
 import com.example.android_with_kotlin.views.WebViewActivity
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding : ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        val btnDark = findViewById<Button>(btnDark)
-        val btnRead = findViewById<Button>(R.id.btnRead)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         val layout = findViewById<LinearLayout>(R.id.LinearLayout)
-        val btnClick = findViewById<Button>(R.id.btnClickme)
-        val btnImIntent = findViewById<Button>(R.id.btnImplicitIntent)
-        val btnWebView = findViewById<Button>(R.id.btnWebView)
-        val mulIntents = findViewById<Button>(R.id.btnMulIntent)
-        val uiux = findViewById<Button>(R.id.btnUiUx)
-        val DBBtn = findViewById<Button>(R.id.btnDataBase)
-        val btnViewBinding = findViewById<Button>(R.id.btnViewBinding)
         Log.i("INFO TAG","THIS IS MY INFO TAG")
-        btnRead.setOnClickListener {
+        binding.btnRead.setOnClickListener {
             layout.setBackgroundResource(R.color.yellow)
         }
 
-        btnDark.setOnClickListener {
+        binding.btnDark.setOnClickListener {
             layout.setBackgroundResource(R.color.black)
         }
-        btnClick.setOnClickListener {
+        binding.btnClickme.setOnClickListener {
            val  intent  = Intent(this, second_activity::class.java)
             Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
-       btnImIntent.setOnClickListener {
+       binding.btnImplicitIntent.setOnClickListener {
            val intent =  Intent(this, ImplicitIntentActivity::class.java)
            startActivity(intent)
        }
-        btnWebView.setOnClickListener {
+        binding.btnWebView.setOnClickListener {
             val  intent = Intent(this, WebViewActivity::class.java)
             startActivity(intent)
         }
-        mulIntents.setOnClickListener {
+        binding.btnMulIntent.setOnClickListener {
             val intent = Intent(this, CafeMainActivity::class.java)
             startActivity(intent)
         }
-        uiux.setOnClickListener {
+        binding.btnUiUx.setOnClickListener {
             val intent = Intent(this, ShowLogoActivity::class.java)
             startActivity(intent)
         }
-        DBBtn.setOnClickListener {
+        binding.btnDataBase.setOnClickListener {
             val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
-        btnViewBinding.setOnClickListener {
+        binding.btnViewBinding.setOnClickListener {
             val intent = Intent(this, ViewBindingActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnDialogBoxes.setOnClickListener {
+            val intent = Intent(this, AlertDialogBoxActivity::class.java)
             startActivity(intent)
         }
 
