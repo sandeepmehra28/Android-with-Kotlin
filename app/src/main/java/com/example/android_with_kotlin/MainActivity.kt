@@ -3,12 +3,10 @@ package com.example.android_with_kotlin
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.android_with_kotlin.R.id.btnDark
+import com.example.android_with_kotlin.customize_dialogbox.CDMainActivity
 import com.example.android_with_kotlin.database_signup.SignupActivity
 import com.example.android_with_kotlin.databinding.ActivityMainBinding
 import com.example.android_with_kotlin.dialogboxes.AlertDialogBoxActivity
@@ -63,6 +61,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnDialogBoxes.setOnClickListener {
             val intent = Intent(this, AlertDialogBoxActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnCustomDialog.setOnClickListener {
+            val intent = Intent(this, CDMainActivity::class.java)
             startActivity(intent)
         }
 

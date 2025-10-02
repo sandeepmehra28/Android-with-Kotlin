@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlin">
         <activity
+            android:name=".customize_dialogbox.CDMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".dialogboxes.AlertDialogBoxActivity"
             android:exported="false" />
         <activity
