@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.android_with_kotlin.Dyanamic_Photo_Frame.FrameActivity
 import com.example.android_with_kotlin.customize_dialogbox.CDMainActivity
 import com.example.android_with_kotlin.database_signup.SignupActivity
 import com.example.android_with_kotlin.databinding.ActivityMainBinding
@@ -65,6 +66,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnCustomDialog.setOnClickListener {
             val intent = Intent(this, CDMainActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnDynamicPhotoFrame.setOnClickListener {
+            val intent = Intent(this, FrameActivity::class.java)
             startActivity(intent)
         }
 
