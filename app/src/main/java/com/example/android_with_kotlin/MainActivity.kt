@@ -12,6 +12,7 @@ import com.example.android_with_kotlin.database_signup.SignupActivity
 import com.example.android_with_kotlin.databinding.ActivityMainBinding
 import com.example.android_with_kotlin.dialogboxes.AlertDialogBoxActivity
 import com.example.android_with_kotlin.intents.ImplicitIntentActivity
+import com.example.android_with_kotlin.list_views.CustomListViewActivity
 import com.example.android_with_kotlin.list_views.ListView1Activity
 import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
 import com.example.android_with_kotlin.uiux.ShowLogoActivity
@@ -75,6 +76,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnListView1.setOnClickListener {
             val intent  = Intent(this, ListView1Activity::class.java)
+            startActivity(intent)
+        }
+        binding.btnCustomListView.setOnClickListener {
+            val intent = Intent(this, CustomListViewActivity::class.java)
             startActivity(intent)
         }
 

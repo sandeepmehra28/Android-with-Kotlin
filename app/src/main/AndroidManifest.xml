@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlin">
         <activity
+            android:name=".list_views.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".list_views.CustomListViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".list_views.ListView1Activity"
             android:exported="false" />
         <activity
