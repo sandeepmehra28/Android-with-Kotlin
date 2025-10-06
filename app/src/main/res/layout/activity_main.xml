@@ -7,104 +7,101 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<LinearLayout
+    android:gravity="center"
+    android:layout_marginTop="40dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+ <Button
+     android:layout_width="80dp"
+     android:layout_height="40dp"
+     android:id="@+id/btnDark"
+     android:text="L3" />
+ <Button
+     android:layout_width="80dp"
+     android:layout_height="40dp"
+     android:id="@+id/btnRead"
+     android:text="L3"
+     />
+ <Button
+     android:layout_width="90dp"
+     android:layout_height="40dp"
+     android:id="@+id/btnImplicitIntent"
+     android:text="L8/10"
+     />
+ <Button
+     android:id="@+id/btnClickme"
+     android:layout_width="80dp"
+     android:layout_height="40dp"
+     android:text="click me" />
+</LinearLayout>
 
-   <Button
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+ <Button
+     android:id="@+id/btnWebView"
+     android:layout_width="115dp"
+     android:layout_height="40dp"
+     android:text="Web-View" />
+ <Button
+     android:id="@+id/btnMulIntent"
+     android:layout_width="150dp"
+     android:layout_height="40dp"
+     android:text="multiple intents" />
+</LinearLayout>
+   <LinearLayout
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:layout_marginTop="20dp"
        android:layout_width="match_parent"
-       android:layout_height="40dp"
-       android:id="@+id/btnDark"
-       android:text="Dark"
-       android:layout_marginStart="20dp"
-       android:layout_marginEnd="20dp"
-       android:layout_marginTop="40dp"
-       />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:id="@+id/btnRead"
-        android:text="Read"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:id="@+id/btnImplicitIntent"
-        android:text="Intent Classes / Implicit Intent"
-        />
+       android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
     <Button
-        android:id="@+id/btnClickme"
-        android:layout_width="match_parent"
+        android:id="@+id/btnUiUx"
+        android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:text="click me" />
+        android:text="UI/UX"/>
     <Button
-        android:id="@+id/btnWebView"
-        android:layout_width="match_parent"
+        android:id="@+id/btnDataBase"
+        android:layout_width="150dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:text="Web-View" />
+        android:text="DataBase"
+        />
     <Button
-        android:id="@+id/btnMulIntent"
-        android:layout_width="match_parent"
+        android:id="@+id/btnViewBinding"
+        android:layout_width="120dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:text="multiple intents" />
- <Button
-     android:id="@+id/btnUiUx"
-     android:layout_width="match_parent"
-     android:layout_height="40dp"
-     android:layout_marginTop="20dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="UI/UX"
-     />
- <Button
-     android:id="@+id/btnDataBase"
-     android:layout_width="match_parent"
-     android:layout_height="40dp"
-     android:layout_marginTop="20dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="DataBase"
-     />
- <Button
-     android:id="@+id/btnViewBinding"
-     android:layout_width="match_parent"
-     android:layout_height="40dp"
-     android:layout_marginTop="20dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="View Binding"
-     />
+        android:text="Binding"
+        />
+   </LinearLayout>
+
+
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ android:orientation="horizontal">
  <Button
      android:id="@+id/btnDialogBoxes"
-     android:layout_width="match_parent"
+     android:layout_width="120dp"
      android:layout_height="40dp"
-     android:layout_marginTop="20dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="Dialog Boxes"
+     android:text="Dialog1 Boxes"
      />
  <Button
      android:id="@+id/btnCustomDialog"
-     android:layout_width="match_parent"
+     android:layout_width="120dp"
      android:layout_height="40dp"
-     android:layout_marginTop="20dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="Dialog Boxes"
+     android:text="Dialog2 Boxes"
      />
+</LinearLayout>
+
  <Button
      android:id="@+id/btnDynamicPhotoFrame"
      android:layout_width="match_parent"
@@ -114,4 +111,14 @@
      android:layout_marginEnd="20dp"
      android:text="Dynamic Photo Frames"
      />
+ <Button
+     android:id="@+id/btnListView1"
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:layout_marginTop="20dp"
+     android:layout_marginStart="20dp"
+     android:layout_marginEnd="20dp"
+     android:text="list view (ToDo)"
+     />
+
 </LinearLayout>

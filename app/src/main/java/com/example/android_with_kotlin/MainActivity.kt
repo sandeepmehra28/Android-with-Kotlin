@@ -12,6 +12,7 @@ import com.example.android_with_kotlin.database_signup.SignupActivity
 import com.example.android_with_kotlin.databinding.ActivityMainBinding
 import com.example.android_with_kotlin.dialogboxes.AlertDialogBoxActivity
 import com.example.android_with_kotlin.intents.ImplicitIntentActivity
+import com.example.android_with_kotlin.list_views.ListView1Activity
 import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
 import com.example.android_with_kotlin.uiux.ShowLogoActivity
 import com.example.android_with_kotlin.viewbinding.ViewBindingActivity
@@ -70,6 +71,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnDynamicPhotoFrame.setOnClickListener {
             val intent = Intent(this, FrameActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnListView1.setOnClickListener {
+            val intent  = Intent(this, ListView1Activity::class.java)
             startActivity(intent)
         }
 

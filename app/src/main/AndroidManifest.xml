@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlin">
         <activity
+            android:name=".list_views.ListView1Activity"
+            android:exported="false" />
+        <activity
             android:name=".Dyanamic_Photo_Frame.FrameActivity"
             android:exported="false" />
         <activity
