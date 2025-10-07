@@ -15,7 +15,6 @@
         app:civ_border_width="2dp"
         android:layout_marginTop="100dp"
         android:layout_gravity="center"
-        android:background="@drawable/pic0"
         app:civ_border_color="#FF000000"/>
     <TextView
         android:id="@+id/tvUserName"

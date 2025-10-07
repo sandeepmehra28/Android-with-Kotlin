@@ -15,6 +15,7 @@ import com.example.android_with_kotlin.intents.ImplicitIntentActivity
 import com.example.android_with_kotlin.list_views.CustomListViewActivity
 import com.example.android_with_kotlin.list_views.ListView1Activity
 import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
+import com.example.android_with_kotlin.recyclerView.MainReViewActivity
 import com.example.android_with_kotlin.uiux.ShowLogoActivity
 import com.example.android_with_kotlin.viewbinding.ViewBindingActivity
 import com.example.android_with_kotlin.views.WebViewActivity
@@ -80,6 +81,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnCustomListView.setOnClickListener {
             val intent = Intent(this, CustomListViewActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnRecyclerView.setOnClickListener {
+            val intent = Intent(this, MainReViewActivity::class.java)
             startActivity(intent)
         }
 

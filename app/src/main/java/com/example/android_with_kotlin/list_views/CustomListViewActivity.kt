@@ -6,7 +6,6 @@ import android.widget.ListView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android_with_kotlin.R
-import com.example.android_with_kotlin.database_signup.Users
 
 
 class CustomListViewActivity : AppCompatActivity() {
