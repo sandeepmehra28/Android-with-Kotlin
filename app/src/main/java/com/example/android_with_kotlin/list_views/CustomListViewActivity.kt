@@ -14,6 +14,7 @@ class CustomListViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_custom_list_view)
+        supportActionBar?.hide()
         val name  = arrayOf("sandeep","sonu","sachin","chaman","dilip")
         val lastMsg = arrayOf("hey im good","hey im good","hey im good","hey im good","hey im good")
         val lastMsgTime = arrayOf("4:45 PM","4:45 PM","4:45 PM","4:45 PM","4:45 PM")

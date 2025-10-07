@@ -16,6 +16,7 @@ class MainReViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main_re_view)
+        supportActionBar?.hide()
     myRecyclerView = findViewById<RecyclerView>(R.id.recyclerViewID)
         val newsImageArray = arrayOf(
             R.drawable.img1,

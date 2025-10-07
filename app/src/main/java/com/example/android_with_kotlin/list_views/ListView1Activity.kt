@@ -15,6 +15,7 @@ class ListView1Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
        binding = ActivityListView1Binding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
         val listView = findViewById<ListView>(R.id.ListViewItems)
         val taskItems = arrayListOf<String>()
         taskItems.add("check mails")

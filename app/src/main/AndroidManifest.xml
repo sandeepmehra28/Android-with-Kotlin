@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlin">
         <activity
+            android:name=".practice.ListViewPractice"
+            android:exported="false" />
+        <activity
             android:name=".recyclerView.MainReViewActivity"
             android:exported="false" />
         <activity
