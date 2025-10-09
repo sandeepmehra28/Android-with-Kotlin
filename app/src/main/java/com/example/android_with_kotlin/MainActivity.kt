@@ -7,6 +7,7 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android_with_kotlin.Dyanamic_Photo_Frame.FrameActivity
+import com.example.android_with_kotlin.apis.MainApiActivity
 import com.example.android_with_kotlin.customize_dialogbox.CDMainActivity
 import com.example.android_with_kotlin.database_signup.SignupActivity
 import com.example.android_with_kotlin.databinding.ActivityMainBinding
@@ -16,6 +17,7 @@ import com.example.android_with_kotlin.list_views.CustomListViewActivity
 import com.example.android_with_kotlin.list_views.ListView1Activity
 import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
 import com.example.android_with_kotlin.practice.ListViewPractice
+import com.example.android_with_kotlin.recipes.RecipesMainActivity
 import com.example.android_with_kotlin.recyclerView.MainReViewActivity
 import com.example.android_with_kotlin.uiux.ShowLogoActivity
 import com.example.android_with_kotlin.viewbinding.ViewBindingActivity
@@ -90,6 +92,14 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnPractice.setOnClickListener {
             val intent = Intent(this, ListViewPractice::class.java)
+            startActivity(intent)
+        }
+        binding.btnApi.setOnClickListener {
+            val intent = Intent(this, MainApiActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnNewActivity.setOnClickListener {
+            val intent = Intent(this, RecipesMainActivity::class.java)
             startActivity(intent)
         }
 

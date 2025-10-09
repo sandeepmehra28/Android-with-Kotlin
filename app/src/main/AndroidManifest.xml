@@ -14,6 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlin">
         <activity
+            android:name=".recipes.RecipesHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recipes.RecipesMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView.NewsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".apis.MainApiActivity"
+            android:exported="false" />
+        <activity
             android:name=".practice.ListViewPractice"
             android:exported="false" />
         <activity

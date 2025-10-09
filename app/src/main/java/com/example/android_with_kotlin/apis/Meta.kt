@@ -1,0 +1,8 @@
+package com.example.android_with_kotlin.apis
+
+data class Meta(
+    val barcode: String,
+    val createdAt: String,
+    val qrCode: String,
+    val updatedAt: String
+)
