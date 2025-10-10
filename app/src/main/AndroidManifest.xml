@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlin">
         <activity
+            android:name=".carts.CartMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".carts.CartIntroActivity"
+            android:exported="false" />
+        <activity
             android:name=".recipes.RecipesHomeActivity"
             android:exported="false" />
         <activity

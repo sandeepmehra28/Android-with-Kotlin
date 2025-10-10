@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android_with_kotlin.Dyanamic_Photo_Frame.FrameActivity
 import com.example.android_with_kotlin.apis.MainApiActivity
+import com.example.android_with_kotlin.carts.CartIntroActivity
 import com.example.android_with_kotlin.customize_dialogbox.CDMainActivity
 import com.example.android_with_kotlin.database_signup.SignupActivity
 import com.example.android_with_kotlin.databinding.ActivityMainBinding
@@ -100,6 +101,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnNewActivity.setOnClickListener {
             val intent = Intent(this, RecipesMainActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnCart.setOnClickListener {
+            val intent  = Intent(this, CartIntroActivity::class.java)
             startActivity(intent)
         }
 
