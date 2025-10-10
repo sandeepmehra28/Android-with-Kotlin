@@ -52,10 +52,11 @@ class MainReViewActivity : AppCompatActivity() {
         myRecyclerView.adapter = myAdapter
         myAdapter.setOnItemClickListener(object : myAdapterNews.onItemClickListener{
             override fun onItemClicking(position: Int) {
-            val intent = Intent(this@MainReViewActivity,NewsDetailActivity::class.java)
+                val intent = Intent(this@MainReViewActivity,NewsDetailActivity::class.java)
                 intent.putExtra("heading",newsArrayList[position].newsHeading)
                 intent.putExtra("imageId",newsArrayList[position].newsImage)
                 intent.putExtra("newscontant",newsArrayList[position].newsContant)
+                startActivity(intent)
                 startActivity(intent)
 
             }

@@ -11,13 +11,13 @@ import com.google.android.material.imageview.ShapeableImageView
 import com.squareup.picasso.Picasso
 
 class MyRecipesAdapter (val context  : Activity , val recipesArrayList : List<Recipe>) :
-RecyclerView.Adapter<MyRecipesAdapter.MyViewHolder>()
+    RecyclerView.Adapter<MyRecipesAdapter.MyViewHolder>()
 {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): MyViewHolder {
-      val itemView  = LayoutInflater.from(context).inflate(R.layout.recipes_each_items,parent,false)
+        val itemView  = LayoutInflater.from(context).inflate(R.layout.recipes_each_items,parent,false)
         return MyViewHolder(itemView)
     }
 
@@ -32,18 +32,18 @@ RecyclerView.Adapter<MyRecipesAdapter.MyViewHolder>()
     }
 
     override fun getItemCount(): Int {
-       return recipesArrayList.size
+        return recipesArrayList.size
     }
 
     class MyViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView){
-     var name : TextView
-     var image : ShapeableImageView
-     var cuisine : TextView
+        var name : TextView
+        var image : ShapeableImageView
+        var cuisine : TextView
 
-    init{
-        name = itemView.findViewById(R.id.recipeTittle)
-        image = itemView.findViewById(R.id.recipeImage)
-        cuisine = itemView.findViewById(R.id.recipeCuisine)
-    }
+        init{
+            name = itemView.findViewById(R.id.recipeTittle)
+            image = itemView.findViewById(R.id.recipeImage)
+            cuisine = itemView.findViewById(R.id.recipeCuisine)
+        }
     }
 }

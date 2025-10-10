@@ -25,11 +25,11 @@ class RecipesHomeActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_recipes_home)
         recipesRecyclerView = findViewById(R.id.recipesRecyclerView)
-      val retrofitBuilder = Retrofit.Builder()
-          .baseUrl("https://dummyjson.com/")
-          .addConverterFactory(GsonConverterFactory.create())
-          .build()
-          .create(RecipesApiInterface::class.java)
+        val retrofitBuilder = Retrofit.Builder()
+            .baseUrl("https://dummyjson.com/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(RecipesApiInterface::class.java)
         val retrofitData = retrofitBuilder.getRecipesData()
         retrofitData.enqueue(object : retrofit2.Callback<RecipesData?> {
             override fun onResponse(
