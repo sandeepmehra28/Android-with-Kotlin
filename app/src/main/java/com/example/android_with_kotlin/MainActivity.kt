@@ -17,6 +17,7 @@ import com.example.android_with_kotlin.intents.ImplicitIntentActivity
 import com.example.android_with_kotlin.list_views.CustomListViewActivity
 import com.example.android_with_kotlin.list_views.ListView1Activity
 import com.example.android_with_kotlin.multiple_intents_class.CafeMainActivity
+import com.example.android_with_kotlin.notifications.DefaultNotificationActivity
 import com.example.android_with_kotlin.practice.ListViewPractice
 import com.example.android_with_kotlin.recipes.RecipesMainActivity
 import com.example.android_with_kotlin.recyclerView.MainReViewActivity
@@ -105,6 +106,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnCart.setOnClickListener {
             val intent  = Intent(this, CartIntroActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnNotification.setOnClickListener {
+            val intent = Intent(this, DefaultNotificationActivity::class.java)
             startActivity(intent)
         }
 

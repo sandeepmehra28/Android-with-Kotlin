@@ -3,6 +3,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
 
     <application
         android:allowBackup="true"
@@ -14,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlin">
         <activity
-            android:name=".recipes.ClickRecipesActivity"
+            android:name=".notifications.DefaultNotificationActivity"
             android:exported="false" />
         <activity
             android:name=".carts.CartMainActivity"
