@@ -101,81 +101,77 @@
      android:text="Dialog2 Boxes"
      />
 </LinearLayout>
-
+<LinearLayout
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
  <Button
      android:id="@+id/btnDynamicPhotoFrame"
-     android:layout_width="match_parent"
+     android:layout_width="100dp"
      android:layout_height="40dp"
-     android:layout_marginTop="20dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="Dynamic Photo Frames"
+     android:text="DPF"
      />
  <Button
      android:id="@+id/btnListView1"
-     android:layout_width="match_parent"
+     android:layout_width="100dp"
      android:layout_height="40dp"
-     android:layout_marginTop="20dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="list view (ToDo)"
+     android:text="LV(TD)"
      />
  <Button
      android:id="@+id/btnCustomListView"
-     android:layout_width="match_parent"
+     android:layout_width="100dp"
      android:layout_height="40dp"
-     android:layout_marginTop="20dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="Custom List View"
+     android:text="CLV"
      />
- <Button
-     android:id="@+id/btnRecyclerView"
+</LinearLayout>
+ <LinearLayout
+     android:layout_gravity="center"
+     android:gravity="center"
+     android:orientation="horizontal"
      android:layout_width="match_parent"
-     android:layout_height="40dp"
-     android:layout_marginTop="10dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="Recycler View"
-     />
- <Button
-     android:id="@+id/btnPractice"
-     android:layout_width="match_parent"
-     android:layout_height="40dp"
-     android:layout_marginTop="10dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="practice"
-     />
- <Button
-     android:id="@+id/btnApi"
-     android:layout_width="match_parent"
-     android:layout_height="40dp"
-     android:layout_marginTop="10dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="API"
-     />
+     android:layout_height="wrap_content">
 
- <Button
-     android:id="@+id/btnNewActivity"
-     android:layout_width="match_parent"
-     android:layout_height="40dp"
-     android:layout_marginTop="10dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="Recipes"
-     />
+  <Button
+      android:id="@+id/btnRecyclerView"
+      android:layout_width="100dp"
+      android:layout_height="40dp"
+      android:text="RV"
+      />
+  <Button
+      android:id="@+id/btnPractice"
+      android:layout_width="100dp"
+      android:layout_height="40dp"
+      android:text="practice"
+      />
+  <Button
+      android:id="@+id/btnApi"
+      android:layout_width="100dp"
+      android:layout_height="40dp"
+      android:text="API"
+      />
+ </LinearLayout>
 
- <Button
-     android:id="@+id/btnCart"
+ <LinearLayout
+     android:layout_gravity="center"
+     android:gravity="center"
+     android:orientation="horizontal"
      android:layout_width="match_parent"
-     android:layout_height="40dp"
-     android:layout_marginTop="10dp"
-     android:layout_marginStart="20dp"
-     android:layout_marginEnd="20dp"
-     android:text="Cart"
-     />
+     android:layout_height="wrap_content">
+  <Button
+      android:id="@+id/btnNewActivity"
+      android:layout_width="100dp"
+      android:layout_height="40dp"
+      android:text="Recipes"
+      />
+  <Button
+      android:id="@+id/btnCart"
+      android:layout_width="100dp"
+      android:layout_height="40dp"
+      android:text="Cart"
+      />
+ </LinearLayout>
  <Button
      android:id="@+id/btnNotification"
      android:layout_width="match_parent"
@@ -184,6 +180,15 @@
      android:layout_marginStart="20dp"
      android:layout_marginEnd="20dp"
      android:text="Notification"
+     />
+ <Button
+     android:id="@+id/btnNavigationView"
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:layout_marginTop="10dp"
+     android:layout_marginStart="20dp"
+     android:layout_marginEnd="20dp"
+     android:text="Bottom Navigation View"
      />
 
 

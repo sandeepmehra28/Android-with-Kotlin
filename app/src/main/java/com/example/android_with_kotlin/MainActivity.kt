@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android_with_kotlin.Dyanamic_Photo_Frame.FrameActivity
 import com.example.android_with_kotlin.apis.MainApiActivity
+import com.example.android_with_kotlin.bottom_navigationview.NavigationMainActivity
 import com.example.android_with_kotlin.carts.CartIntroActivity
 import com.example.android_with_kotlin.customize_dialogbox.CDMainActivity
 import com.example.android_with_kotlin.database_signup.SignupActivity
@@ -110,6 +111,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnNotification.setOnClickListener {
             val intent = Intent(this, DefaultNotificationActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnNavigationView.setOnClickListener {
+            val intent = Intent(this, NavigationMainActivity::class.java)
             startActivity(intent)
         }
 

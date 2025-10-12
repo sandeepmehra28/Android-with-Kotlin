@@ -3,7 +3,9 @@ package com.example.android_with_kotlin.notifications
 import android.annotation.SuppressLint
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.app.PendingIntent
 import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
@@ -28,7 +30,9 @@ class DefaultNotificationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_default_notification)
-
+       //pending notification
+        val intent = Intent(this, DefaultNotificationActivity::class.java)
+        val pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_IMMUTABLE)
         // Request notification permission if needed
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             requestPermissions(arrayOf(android.Manifest.permission.POST_NOTIFICATIONS), 1)
@@ -41,6 +45,7 @@ class DefaultNotificationActivity : AppCompatActivity() {
             .setContentText("This is a welcome notification from my app")
             .setSmallIcon(R.drawable.outline_account_circle_24)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
+            .setContentIntent(pendingIntent)//attach pending intent
             .build()
 
         val notificationManager = NotificationManagerCompat.from(this)
@@ -60,5 +65,7 @@ class DefaultNotificationActivity : AppCompatActivity() {
         ).apply {
             description = "This is my notification channel"
         }
+        val manager = getSystemService(NotificationManager::class.java)
+        manager.createNotificationChannel(channel)
     }
 }
