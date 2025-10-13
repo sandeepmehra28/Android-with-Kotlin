@@ -14,4 +14,13 @@ In finance, he pointed to the growing influence of sanctions, asset seizures, an
 Another area of concern, he noted, is the erosion of national sovereignty, facilitated by deep technological penetration and manipulation. Global rules and institutions are being re-evaluated, and in some cases, abandoned altogether. Jaishankar emphasized that cost is no longer the sole factor in economic decisions—issues of ownership and security are now equally critical. He warned of rising “end-to-end” risks, from concentrated production and narrow supply chains to market dependency. As the belief in balanced power erodes, he noted a shift towards actions driven by margins of power. Overall, Jaishankar concluded that the world is experiencing increased competition and fewer cooperative agreements, with global dynamics moving away from collaboration and more towards intersecting, often conflicting, interests.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>

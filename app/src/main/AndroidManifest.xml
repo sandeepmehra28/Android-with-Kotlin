@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithKotlin">
         <activity
+            android:name=".fragments.FragmentMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".bottom_navigationview.NavigationMainActivity"
             android:exported="false" />
         <activity

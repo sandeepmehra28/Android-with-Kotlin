@@ -14,6 +14,7 @@ import com.example.android_with_kotlin.customize_dialogbox.CDMainActivity
 import com.example.android_with_kotlin.database_signup.SignupActivity
 import com.example.android_with_kotlin.databinding.ActivityMainBinding
 import com.example.android_with_kotlin.dialogboxes.AlertDialogBoxActivity
+import com.example.android_with_kotlin.fragments.FragmentMainActivity
 import com.example.android_with_kotlin.intents.ImplicitIntentActivity
 import com.example.android_with_kotlin.list_views.CustomListViewActivity
 import com.example.android_with_kotlin.list_views.ListView1Activity
@@ -115,6 +116,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnNavigationView.setOnClickListener {
             val intent = Intent(this, NavigationMainActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnFragment.setOnClickListener {
+            val intent = Intent(this, FragmentMainActivity::class.java)
             startActivity(intent)
         }
 
